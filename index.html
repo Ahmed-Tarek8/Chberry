@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#120014" />
+  <title>CHBERRY — From Berry to Bottle</title>
+  <meta name="description" content="A scroll-driven cinematic journey from ripe berries to a finished bottle of CHBERRY juice." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body class="is-loading">
+  <div class="sequence-loader" id="sequenceLoader" aria-live="polite">
+    <span>Preparing the journey</span>
+    <strong id="loaderPercent">0%</strong>
+    <div><i id="loaderBar"></i></div>
+  </div>
+
+  <div class="site-shell">
+    <header class="topbar" aria-label="Site header">
+      <a class="brand" href="#origin" aria-label="CHBERRY home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>CHBERRY</span>
+      </a>
+      <div class="topbar-meta">
+        <span>100% BERRY</span>
+        <span class="chapter-counter"><b id="activeChapter">01</b> / 04</span>
+      </div>
+    </header>
+
+    <aside class="journey-nav" aria-label="Journey progress">
+      <div class="journey-track"><span id="journeyFill"></span></div>
+      <a href="#origin" class="journey-dot active" data-index="0" aria-label="Origin"></a>
+      <a href="#blend" class="journey-dot" data-index="1" aria-label="Blend"></a>
+      <a href="#bottle" class="journey-dot" data-index="2" aria-label="Bottle"></a>
+      <a href="#impact" class="journey-dot" data-index="3" aria-label="Impact"></a>
+    </aside>
+
+    <main>
+      <section class="story-section light-section" id="origin" data-index="0">
+        <div class="sticky-frame">
+          <canvas class="story-canvas" data-sequence="1" aria-label="Ripe berries on the plant"></canvas>
+          <div class="media-shade"></div>
+          <div class="chapter-copy copy-left">
+            <p class="eyebrow"><span>01</span> ORIGIN</p>
+            <h1>Born<br />in the wild.</h1>
+            <p class="chapter-description">Deep colour. Cold morning air. The journey begins before the berry ever leaves the branch.</p>
+          </div>
+          <div class="scroll-cue" aria-hidden="true"><span>SCROLL TO HARVEST</span><i></i></div>
+          <div class="section-progress"><span></span></div>
+        </div>
+      </section>
+
+      <section class="story-section" id="blend" data-index="1">
+        <div class="sticky-frame">
+          <canvas class="story-canvas" data-sequence="2" aria-label="Berries entering the blending chamber"></canvas>
+          <div class="media-shade"></div>
+          <div class="chapter-copy copy-right">
+            <p class="eyebrow"><span>02</span> THE DROP</p>
+            <h2>Into the<br />blend.</h2>
+            <p class="chapter-description">Blackberry, blueberry, raspberry and strawberry collide in one concentrated rush.</p>
+          </div>
+          <div class="section-progress"><span></span></div>
+        </div>
+      </section>
+
+      <section class="story-section" id="bottle" data-index="2">
+        <div class="sticky-frame">
+          <canvas class="story-canvas" data-sequence="3" aria-label="Fresh berry juice filling a bottle"></canvas>
+          <div class="media-shade"></div>
+          <div class="chapter-copy copy-left">
+            <p class="eyebrow"><span>03</span> PURE FORM</p>
+            <h2>Berry.<br />Bottled.</h2>
+            <p class="chapter-description">Nothing distracts from the fruit. A dense, vivid pour sealed at peak intensity.</p>
+          </div>
+          <div class="section-progress"><span></span></div>
+        </div>
+      </section>
+
+      <section class="story-section final-section" id="impact" data-index="3">
+        <div class="sticky-frame">
+          <canvas class="story-canvas" data-sequence="4" aria-label="Finished berry juice bottle landing in water"></canvas>
+          <div class="media-shade"></div>
+          <div class="chapter-copy final-copy">
+            <p class="eyebrow"><span>04</span> THE IMPACT</p>
+            <h2>Taste the<br />whole journey.</h2>
+            <p class="chapter-description">Cold. Bold. Alive with berry.</p>
+            <button class="cta" type="button" id="replayButton">REPLAY THE JOURNEY <span>↗</span></button>
+          </div>
+          <div class="section-progress"><span></span></div>
+        </div>
+      </section>
+    </main>
+
+    <div class="grain" aria-hidden="true"></div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

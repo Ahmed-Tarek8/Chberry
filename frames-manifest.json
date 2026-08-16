@@ -1,0 +1,26 @@
+{
+  "1": {
+    "count": 120,
+    "fps": 24,
+    "width": 1280,
+    "pattern": "./frames/1/{frame}.jpg"
+  },
+  "2": {
+    "count": 120,
+    "fps": 24,
+    "width": 1280,
+    "pattern": "./frames/2/{frame}.jpg"
+  },
+  "3": {
+    "count": 120,
+    "fps": 24,
+    "width": 1280,
+    "pattern": "./frames/3/{frame}.jpg"
+  },
+  "4": {
+    "count": 120,
+    "fps": 24,
+    "width": 1280,
+    "pattern": "./frames/4/{frame}.jpg"
+  }
+}
